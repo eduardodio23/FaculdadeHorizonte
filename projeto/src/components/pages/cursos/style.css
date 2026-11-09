@@ -154,6 +154,136 @@
   color: #81701f;
 }
 
+.course-detail-hero {
+  padding-block: 27px 70px;
+  background: #f2eee3;
+}
+
+.course-detail-hero-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  align-self: flex-start;
+  color: var(--color-ink-soft);
+  font-size: 0.83rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.course-back-link:hover {
+  color: var(--color-ink);
+}
+
+.course-back-link span {
+  font-size: 1.15rem;
+}
+
+.course-detail-heading {
+  max-width: 780px;
+  padding-top: 57px;
+}
+
+.course-detail-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--color-ink-soft);
+  font-size: 0.79rem;
+}
+
+.course-detail-heading h1 {
+  margin: 20px 0 15px;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 4.7rem);
+  font-weight: 650;
+  letter-spacing: -0.075em;
+  line-height: 1.02;
+}
+
+.course-detail-heading > p {
+  max-width: 650px;
+  margin-bottom: 25px;
+  color: var(--color-ink-soft);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.curriculum-section {
+  padding-block: 76px 20px;
+}
+
+.curriculum-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 34px;
+}
+
+.curriculum-heading > p {
+  max-width: 360px;
+  color: var(--color-ink-soft);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.curriculum-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.semester-card {
+  padding: 22px 24px;
+  border: 1px solid var(--color-line);
+  border-radius: 9px;
+  background: var(--color-paper);
+}
+
+.semester-card h3 {
+  margin: 0 0 15px;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: -0.025em;
+}
+
+.semester-card ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.semester-card li {
+  position: relative;
+  padding-left: 17px;
+  color: var(--color-ink-soft);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.semester-card li::before {
+  position: absolute;
+  top: 0.62em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-yellow);
+  content: '';
+}
+
+.curriculum-back-link {
+  margin-top: 29px;
+}
+
 .courses-cta {
   margin-top: 75px;
   background: var(--color-ink);
@@ -211,6 +341,28 @@
   }
 
   .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-detail-hero {
+    padding-block: 22px 55px;
+  }
+
+  .course-detail-heading {
+    padding-top: 43px;
+  }
+
+  .curriculum-section {
+    padding-top: 58px;
+  }
+
+  .curriculum-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .curriculum-grid {
     grid-template-columns: 1fr;
   }
 

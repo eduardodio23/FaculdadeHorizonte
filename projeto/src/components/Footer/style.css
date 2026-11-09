@@ -15,10 +15,6 @@
   color: #fffdf7;
 }
 
-.footer-brand .brand-mark span {
-  background: var(--color-ink);
-}
-
 .footer-about p {
   max-width: 245px;
   margin-top: 17px;

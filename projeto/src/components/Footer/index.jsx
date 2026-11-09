@@ -9,11 +9,6 @@ function Footer() {
       <div className="footer-main container">
         <div className="footer-about">
           <Link className="brand footer-brand" to="/" aria-label="Faculdade Horizonte — início">
-            <span className="brand-mark" aria-hidden="true">
-              <span />
-              <span />
-              <span />
-            </span>
             <span className="brand-name">
               faculdade
               <strong>horizonte</strong>

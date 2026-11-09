@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import logo from '../../assets/horizonte.png'
 import './style.css'
 
 const links = [
@@ -19,11 +20,7 @@ function Header() {
     <header className="site-header">
       <div className="header-inner container">
         <Link className="brand" to="/" aria-label="Faculdade Horizonte — início" onClick={closeMenu}>
-          <span className="brand-mark" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </span>
+          <img className="brand-logo" src={logo} alt="" />
           <span className="brand-name">
             faculdade
             <strong>horizonte</strong>

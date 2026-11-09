@@ -15,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Inicio />} />
             <Route path="/cursos" element={<Cursos />} />
+            <Route path="/cursos/:slug" element={<Cursos />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

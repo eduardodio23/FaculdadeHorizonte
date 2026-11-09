@@ -20,35 +20,11 @@
   text-decoration: none;
 }
 
-.brand-mark {
-  position: relative;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: flex-end;
-  gap: 3px;
-  overflow: hidden;
-  padding: 5px;
-  border-radius: 11px;
-  background: var(--color-yellow);
-}
-
-.brand-mark span {
-  flex: 1;
-  border-radius: 3px 3px 1px 1px;
-  background: var(--color-ink);
-}
-
-.brand-mark span:nth-child(1) {
-  height: 44%;
-}
-
-.brand-mark span:nth-child(2) {
-  height: 72%;
-}
-
-.brand-mark span:nth-child(3) {
-  height: 100%;
+.brand-logo {
+  width: 54px;
+  height: 36px;
+  border-radius: 6px;
+  object-fit: cover;
 }
 
 .brand-name {
