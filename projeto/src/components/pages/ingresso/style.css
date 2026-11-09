@@ -1,0 +1,416 @@
+.admission-hero {
+  padding-block: 76px 70px;
+  background: #f2eee3;
+}
+
+.admission-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  align-items: end;
+  gap: 60px;
+}
+
+.admission-hero h1 {
+  max-width: 760px;
+  margin: 17px 0 16px;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6.4vw, 5rem);
+  font-weight: 650;
+  letter-spacing: -0.075em;
+  line-height: 1.02;
+}
+
+.admission-hero h1 span {
+  text-decoration: underline;
+  text-decoration-color: var(--color-yellow);
+  text-decoration-thickness: 8px;
+  text-underline-offset: 4px;
+}
+
+.admission-hero-inner > div:first-child > p {
+  max-width: 560px;
+  color: var(--color-ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.admission-hero-note {
+  padding: 20px;
+  border-radius: 9px;
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.admission-note-label {
+  color: var(--color-yellow);
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.admission-hero-note strong {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.admission-hero-note p {
+  margin: 8px 0 0;
+  color: #d3d0c4;
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+.admission-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 34px;
+}
+
+.admission-heading > p {
+  max-width: 315px;
+  color: var(--color-ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.admission-paths {
+  padding-block: 76px 80px;
+}
+
+.path-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.path-card {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 24px 24px;
+  border: 1px solid var(--color-line);
+  border-radius: 9px;
+  background: var(--color-paper);
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.path-card:hover {
+  transform: translateY(-3px);
+  border-color: #d7c67f;
+}
+
+.path-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.path-tag {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f4edcf;
+  color: #6f5b1d;
+  font-size: 0.69rem;
+  font-weight: 750;
+}
+
+.path-number {
+  color: #a8a598;
+  font-size: 0.73rem;
+  font-weight: 700;
+}
+
+.path-card h3 {
+  margin: 26px 0 8px;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 650;
+  letter-spacing: -0.045em;
+}
+
+.path-card > p {
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: 0.87rem;
+  line-height: 1.6;
+}
+
+.path-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0 0;
+  padding: 18px 0 0;
+  border-top: 1px solid #efecdf;
+  list-style: none;
+}
+
+.path-card li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.83rem;
+  line-height: 1.5;
+}
+
+.path-card li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #c89b12;
+  content: '✳';
+}
+
+.admission-scholarships {
+  padding-block: 74px 82px;
+  background: #f2eee3;
+}
+
+.admission-scholarships .section-heading {
+  margin-bottom: 34px;
+}
+
+.scholarship-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.scholarship-card {
+  min-height: 205px;
+  padding: 23px;
+  border: 1px solid #e1dbca;
+  border-radius: 9px;
+  background: var(--color-paper);
+}
+
+.scholarship-value {
+  display: inline-block;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: var(--color-yellow);
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
+.scholarship-card h3 {
+  margin: 26px 0 8px;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: -0.035em;
+}
+
+.scholarship-card p {
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+
+.admission-steps {
+  padding-block: 90px 20px;
+}
+
+.steps-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step-item {
+  padding: 22px 24px 10px 0;
+  border-top: 2px solid var(--color-ink);
+}
+
+.step-item:first-child {
+  border-top-color: var(--color-yellow);
+}
+
+.step-number {
+  color: #a19e91;
+  font-size: 0.74rem;
+  font-weight: 750;
+}
+
+.step-item h3 {
+  margin: 18px 0 8px;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  letter-spacing: -0.035em;
+}
+
+.step-item p {
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+.admission-faq {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  gap: 80px;
+  padding-block: 90px 10px;
+}
+
+.faq-list {
+  border-top: 1px solid var(--color-line);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-line);
+}
+
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 21px 0;
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary span {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--color-line);
+  border-radius: 50%;
+  background: var(--color-paper);
+  font-size: 1.1rem;
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.faq-item[open] summary span {
+  transform: rotate(45deg);
+  background: var(--color-yellow);
+}
+
+.faq-item p {
+  max-width: 600px;
+  margin: 0;
+  padding-bottom: 22px;
+  color: var(--color-ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.admission-cta {
+  margin-top: 80px;
+  background: var(--color-ink);
+  color: #fffdf7;
+}
+
+.admission-cta-inner {
+  min-height: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.admission-cta .eyebrow {
+  color: #d3d0c4;
+}
+
+.admission-cta h2 {
+  max-width: 620px;
+  margin: 13px 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 600;
+  letter-spacing: -0.06em;
+  line-height: 1.12;
+}
+
+@media (max-width: 900px) {
+  .path-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scholarship-grid,
+  .steps-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .admission-faq {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .admission-hero {
+    padding-block: 57px;
+  }
+
+  .admission-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 27px;
+  }
+
+  .admission-hero h1 {
+    font-size: clamp(2.8rem, 12vw, 4.3rem);
+  }
+
+  .admission-hero-note {
+    max-width: 400px;
+  }
+
+  .admission-paths {
+    padding-block: 58px 60px;
+  }
+
+  .admission-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .admission-steps,
+  .admission-faq {
+    padding-top: 64px;
+  }
+
+  .admission-cta {
+    margin-top: 60px;
+  }
+
+  .admission-cta-inner {
+    min-height: 245px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .scholarship-grid,
+  .steps-list {
+    grid-template-columns: 1fr;
+  }
+
+  .scholarship-card {
+    min-height: auto;
+  }
+}

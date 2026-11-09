@@ -6,6 +6,9 @@ const links = [
   { to: '/', label: 'Início', end: true },
   { to: '/cursos', label: 'Cursos' },
   { to: '/sobre', label: 'Sobre nós' },
+  { to: '/ingresso', label: 'Ingresso' },
+  { to: '/noticias', label: 'Notícias' },
+  { to: '/contato', label: 'Contato' },
 ]
 
 function Header() {
