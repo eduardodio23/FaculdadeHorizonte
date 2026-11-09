@@ -1,16 +1,68 @@
-# React + Vite
+# Faculdade Horizonte
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site institucional da Faculdade Horizonte, desenvolvido com React e Vite. O projeto apresenta a instituição, seus cursos e informações úteis para quem deseja conhecer a faculdade.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Navegação responsiva entre as páginas Início, Cursos, Sobre, Ingresso, Notícias e Contato.
+- Página de detalhes para cada curso, com descrição e grade curricular por semestre.
+- Links de contato por e-mail e telefone.
+- Header e footer compartilhados, com o ano atual atualizado automaticamente no rodapé.
 
-## React Compiler
+## Identidade visual
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A interface usa uma paleta acolhedora e de alto contraste:
 
-## Expanding the ESLint configuration
+| Cor | Código | Uso |
+| --- | --- | --- |
+| Amarelo | `#F5CE54` | Destaques, botões e detalhes visuais |
+| Preto suave | `#22221D` | Textos principais, header/footer e elementos de contraste |
+| Bege | `#FBF8EF` | Fundo principal |
+| Bege claro | `#F2EEE3` | Fundos alternativos para seções |
+| Branco quente | `#FFFDF7` | Cartões e superfícies |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+As cores principais estão definidas como variáveis CSS em `src/index.css`.
+
+## Tecnologias
+
+- React
+- React Router
+- Vite
+- CSS
+
+## Executar localmente
+
+Requer Node.js e npm instalados.
+
+```bash
+npm install
+npm run dev
+```
+
+O Vite exibirá no terminal o endereço local para abrir no navegador.
+
+## Verificações
+
+```bash
+npm run build
+npm run lint
+```
+
+## Estrutura do projeto
+
+```text
+src/
+  components/
+    Footer/
+    Header/
+    pages/
+      contato/
+      cursos/
+      ingresso/
+      inicio/
+      noticias/
+      sobre/
+  assets/
+```
+
+Cada página e os componentes de header/footer possuem seus próprios arquivos `index.jsx` e `style.css`.
