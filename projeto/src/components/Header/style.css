@@ -44,7 +44,7 @@
 .primary-navigation {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 28px;
 }
 
 .nav-link {
@@ -102,7 +102,7 @@
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 960px) {
   .header-inner {
     min-height: 72px;
   }

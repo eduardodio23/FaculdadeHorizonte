@@ -22,6 +22,9 @@ function Footer() {
           <Link to="/">Início</Link>
           <Link to="/cursos">Cursos</Link>
           <Link to="/sobre">Sobre nós</Link>
+          <Link to="/ingresso">Ingresso</Link>
+          <Link to="/noticias">Notícias</Link>
+          <Link to="/contato">Contato</Link>
         </div>
 
         <div className="footer-contact">
@@ -29,7 +32,9 @@ function Footer() {
           <a href="mailto:contato@faculdadehorizonte.edu.br">
             contato@faculdadehorizonte.edu.br
           </a>
-          <span>Atendimento de segunda a sexta</span>
+          <a href="tel:+551130002026">(11) 3000-2026</a>
+          <Link to="/contato">Envie uma mensagem</Link>
+          <span>Atendimento de segunda a sábado</span>
         </div>
       </div>
       <div className="footer-bottom">
